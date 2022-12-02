@@ -58,6 +58,6 @@ const splide = new Splide('.splide', {
 splide.mount();
 
 // Scroll Reveal
-ScrollReveal().reveal('.about', { delay: 200 });
+ScrollReveal().reveal('.about', { delay: 300 });
 ScrollReveal().reveal('.testimonials', { delay: 300 });
 ScrollReveal().reveal('.contact', { delay: 300 });
