@@ -162,7 +162,7 @@ img {
     line-height: 1;
     font-family: var(--font-special);
     font-weight: var(--font-bold);
-    background: linear-gradient(180deg, #5dadec 35%, #ef9645 42%, #dd2e44 60%, #ef9645 65%, #ffdc5d 60%, #676cdb 72%);
+    background: linear-gradient(to bottom, #F8A7A1, #D16D7E, #6B5B95);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
