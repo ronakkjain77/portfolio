@@ -1,368 +1,840 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ronak Lodha's Portfolio</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ronak Lodha — Senior Data Analyst</title>
+<meta name="description" content="Senior Data Analyst at Iksula, Mumbai. Analytics, data engineering and applied AI — plus the technical side of pre-sales and solutions. Previously Quilytics (Google logistics, marketing mix modeling) and Viral Fission.">
+<meta name="author" content="Ronak Lodha">
+<meta name="theme-color" content="#0a0c10" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://ronakkjain77.github.io/portfolio/">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&family=Kanit:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icon-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
-    />
-    <!-- Animate CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ronak Lodha — Senior Data Analyst">
+<meta property="og:description" content="I sit between the data and the decision. Analytics, data engineering and applied AI at Iksula, Mumbai.">
+<meta property="og:url" content="https://ronakkjain77.github.io/portfolio/">
+<meta property="og:image" content="https://ronakkjain77.github.io/portfolio/assets/img/ronak-880.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ronak Lodha — Senior Data Analyst">
+<meta name="twitter:description" content="I sit between the data and the decision. Analytics, data engineering and applied AI at Iksula, Mumbai.">
+<meta name="twitter:image" content="https://ronakkjain77.github.io/portfolio/assets/img/ronak-880.jpg">
 
-    <!-- SplideJs Styles -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css"
-    />
-    <!-- App Styles -->
-    <link rel="stylesheet" href="styles/app.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="animate__animated animate__slideInDown">
-        <div class="container">
-          <h1 class="header__logo">
-            <a href="https://ronakkjain77.github.io/portfolio/"> Ronak. </a>
-          </h1>
-          <nav class="navigation">
-            <ul>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a class="btn btn--main" href="assets/resume.pdf" download>
-              <i class="bi bi-download"></i> Resume
-            </a>
-          </nav>
-          <div class="header__resume">
-            <a class="btn btn--main" href="assets/resume.pdf" download>
-              <i class="bi bi-download"></i> Resume
-            </a>
-          </div>
-          <div class="header__mobile">
-            <button id="navigation-button">
-              <i class="bi bi-list"></i>
-            </button>
-          </div>
-        </div>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles/main.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ronak Lodha",
+  "alternateName": "Ronak Harshad Lodha",
+  "jobTitle": "Senior Data Analyst",
+  "worksFor": { "@type": "Organization", "name": "Iksula" },
+  "url": "https://ronakkjain77.github.io/portfolio/",
+  "email": "mailto:ronaklodhaps110@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Bhavan's College, Mumbai" },
+  "knowsAbout": ["Data Analysis","Marketing Mix Modeling","Data Engineering","BigQuery","SQL","Python","Business Intelligence","Natural Language Processing","Agentic AI","Tableau","Google Analytics 4"],
+  "sameAs": ["https://www.linkedin.com/in/ronak-lodha","https://github.com/ronakkjain77"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="shell topbar__in">
+    <a class="mark" href="#top" aria-label="Ronak Lodha — home">
+      <span class="mark__glyph" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M2 18 L8 11 L13 15 L22 4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="8" cy="11" r="1.6" fill="currentColor" stroke="none"/>
+          <circle cx="13" cy="15" r="1.6" fill="currentColor" stroke="none"/>
+        </svg>
+      </span>
+      <span class="mark__text">Ronak Lodha</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#now">Now</a>
+      <a href="#work">Work</a>
+      <a href="#path">Path</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#offline">Offline</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="topbar__act">
+      <button class="iconbtn" id="cmdOpen" type="button" aria-label="Search sections" title="Search (press /)">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch to light theme" title="Toggle theme">
+        <svg class="ico-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke-linejoin="round"/>
+        </svg>
+        <svg class="ico-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.1 5.1l1.4 1.4M17.5 17.5l1.4 1.4M18.9 5.1l-1.4 1.4M6.5 17.5l-1.4 1.4" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <a class="btn btn--sm" href="assets/resume.pdf" download>Résumé</a>
+      <button class="iconbtn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobilenav">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+  <div class="topbar__rule" id="scrollRule" aria-hidden="true"></div>
+</header>
+
+<div class="msheet" id="mobilenav" hidden>
+  <nav aria-label="Mobile">
+    <a href="#now"><em>01</em> Now</a>
+    <a href="#work"><em>02</em> Work</a>
+    <a href="#path"><em>03</em> Path</a>
+    <a href="#toolkit"><em>04</em> Toolkit</a>
+    <a href="#offline"><em>05</em> Offline</a>
+    <a href="#credentials"><em>06</em> Credentials</a>
+    <a href="#contact"><em>07</em> Contact</a>
+  </nav>
+</div>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ───────────────────────── HERO ───────────────────────── -->
+<section class="hero">
+  <div class="hero__field" aria-hidden="true">
+    <svg viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+          <path d="M48 0H0V48" fill="none" stroke="currentColor" stroke-width="1"/>
+        </pattern>
+        <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="white" stop-opacity="0.9"/>
+          <stop offset="100%" stop-color="white" stop-opacity="0"/>
+        </linearGradient>
+        <mask id="fademask"><rect width="1200" height="520" fill="url(#fade)"/></mask>
+      </defs>
+      <rect width="1200" height="520" fill="url(#grid)" mask="url(#fademask)"/>
+      <path class="hero__spark" d="M0 430 L100 405 L200 418 L300 362 L400 375 L500 300 L600 318 L700 244 L800 262 L900 176 L1000 150 L1100 96 L1200 70"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <g class="hero__dots" fill="currentColor">
+        <circle cx="300" cy="362" r="3.5"/><circle cx="500" cy="300" r="3.5"/>
+        <circle cx="700" cy="244" r="3.5"/><circle cx="900" cy="176" r="3.5"/>
+        <circle cx="1100" cy="96" r="3.5"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="shell hero__in">
+    <p class="eyebrow reveal"><span>Mumbai, India</span><span class="eyebrow__sep" aria-hidden="true">·</span><span>Senior Data Analyst @ Iksula</span></p>
+
+    <h1 class="hero__h1 reveal">
+      I sit between the<br>
+      data and the <em>decision.</em>
+    </h1>
+
+    <p class="hero__lede reveal">
+      I build the pipelines, models and dashboards behind a business question —
+      and I'm in the room when the answer has to convince someone.
+    </p>
+
+    <div class="hero__cta reveal">
+      <a class="btn btn--primary" href="#work">See selected work</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+
+    <figure class="hero__portrait reveal" aria-hidden="false">
+      <img src="assets/img/ronak-480.jpg"
+           srcset="assets/img/ronak-480.jpg 480w, assets/img/ronak-880.jpg 880w"
+           sizes="(max-width: 860px) 190px, 260px"
+           width="880" height="876" alt="Portrait of Ronak Lodha" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+
+  <div class="shell">
+    <dl class="stats reveal">
+      <div class="stat">
+        <dt>Years in analytics</dt>
+        <dd><span class="num" data-count="4" data-suffix="+">4+</span></dd>
+        <p>Full-time since 2022, across BI, engineering and applied AI.</p>
       </div>
+      <div class="stat">
+        <dt>Dashboard latency cut</dt>
+        <dd><span class="num" data-count="70" data-suffix="%">70%</span></dd>
+        <p>On Google's logistics dashboards — near real-time access.</p>
+      </div>
+      <div class="stat">
+        <dt>LinkedIn audience</dt>
+        <dd><span class="num" data-count="12" data-suffix="k+">12k+</span></dd>
+        <p>Followers who track what I publish on data and analytics.</p>
+      </div>
+      <div class="stat">
+        <dt>International medals</dt>
+        <dd><span class="num" data-count="3" data-suffix="">3</span></dd>
+        <p>Skating for India at U19 — one gold, two silver.</p>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ───────────────────────── NOW ───────────────────────── -->
+<section class="band" id="now">
+  <div class="shell">
+    <header class="shead reveal">
+      <span class="shead__n">01</span>
+      <h2>Now</h2>
+      <span class="shead__rule" aria-hidden="true"></span>
+      <span class="shead__meta">Aug 2026 — present</span>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero__wrapper">
-          <h1 class="hero__title animate__animated animate__slideInDown">
-            Data Analyst
-          </h1>
-          <p class="hero__content animate__animated animate__slideInDown">
-            
-          </p>
-
-          <div class="hero__img" style="background-image: url('assets/curve.png')">
-            <div class="hero__imgCircle animate__animated animate__slideInUp">
-              <img src="assets/profile.png" alt="Profile Picture" />
-            </div>
-          </div>
-
-          <div class="hero__social animate__animated animate__slideInUp">
-            <ul class="social">
-              <li>
-                <a href="https://www.linkedin.com/in/ronak-lodha"><i class="bi bi-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/ronakkjain77"><i class="bi bi-github"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/ronakkjain77"><i class="bi bi-twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/ronakk____/"><i class="bi bi-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <div class="now">
+      <div class="now__main reveal">
+        <p class="now__role">Senior Data Analyst, <a href="https://www.iksula.com" rel="noopener noreferrer" target="_blank">Iksula</a></p>
+        <p class="now__body">
+          I do the analysis, the data engineering, and the data-science work — including
+          the AI and ML end of it. Alongside that I carry the technical side of
+          <strong>pre-sales and solutions</strong>: working out what's actually buildable for a
+          client, designing the approach, and being the person who can defend it in the room.
+        </p>
+        <p class="now__body">
+          It's the combination I've been moving toward for four years. Analysis that
+          nobody acts on is a hobby; a solution nobody can deliver is a slide. The useful
+          place is in between.
+        </p>
       </div>
-    </section>
 
-    <!-- Portfolio Section -->
-    <section class="section animate__animated animate__slideInUp" id="portfolio">
-      <div class="container">
-        <div class="section__header section__header--center">
-          <h2 class="section__title">Portfolio</h2>
-          <p class="section__subtitle">See my latest work</p>
-        </div>
-        <div class="portfolio">
-          <div class="portfolio__box">
-            <div class="portfolio__img">
-              <img src="assets/stock-price-predictor.jpg" alt="Portfolio Items" />
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__title">Stock Price Predictor</h3>
-              <p class="portfolio__content">
-                Leveraged Machine Learning (ML) techniques (Tensor
-                Flow) to build prediction model for stock prices,
-                achieving 95% accuracy in short-term and 90% accuracy
-                in long-term predictions.
+      <ul class="now__facets reveal">
+        <li><span>Analysis</span><em>Metrics, modelling, ad-hoc investigation</em></li>
+        <li><span>Data engineering</span><em>Pipelines, warehousing, data quality</em></li>
+        <li><span>AI &amp; ML</span><em>Applied models, agentic workflows, LLMs</em></li>
+        <li><span>Pre-sales &amp; solutions</span><em>Scoping, solution design, technical demos</em></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── WORK ───────────────────────── -->
+<section class="band band--alt" id="work">
+  <div class="shell">
+    <header class="shead reveal">
+      <span class="shead__n">02</span>
+      <h2>Selected work</h2>
+      <span class="shead__rule" aria-hidden="true"></span>
+      <span class="shead__meta">5 records · expand to read</span>
+    </header>
+
+    <p class="band__lede reveal">
+      Client work, mostly. Where a number is quoted it's one I can stand behind; where a
+      chart is illustrative it says so.
+    </p>
+
+    <div class="records">
+
+      <!-- 1 -->
+      <details class="rec reveal" name="rec">
+        <summary>
+          <span class="rec__idx">01</span>
+          <span class="rec__title">
+            <strong>Making Google's logistics dashboards fast enough to act on</strong>
+            <span class="rec__org">Quilytics · client project for Google (xWF) · Logistics Analyst</span>
+          </span>
+          <span class="rec__tag">~70% faster</span>
+          <span class="rec__chev" aria-hidden="true"></span>
+        </summary>
+        <div class="rec__body">
+          <div class="rec__cols">
+            <div class="rec__col">
+              <h3>The problem</h3>
+              <p>
+                Google's logistics teams were mid-migration. Dashboards were slow enough that
+                people stopped opening them, and the KPIs on those dashboards had drifted into
+                operational trivia — numbers that moved without telling anyone what to do.
               </p>
-              <a class="portfolio__link" href="https://github.com/ronakkjain77/Stock-Price-Prediction">See Work <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="portfolio__box">
-            <div class="portfolio__img">
-              <img src="assets/trump's tweet.jpg" alt="Portfolio Items" />
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__title">A Text Analysis of Trump's Tweets</h3>
-              <p class="portfolio__content">
-                Collected, cleaned and compiled over 60,000 of Trump's tweets using R(programming) 
-                and Natural Language Processing tools, then implemented sentiment score and word 
-                frequency analyses to identify key patterns in the data.
-              </p>
-              <a class="portfolio__link" href="https://github.com/ronakkjain77/R-Project">See Work <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="portfolio__box">
-            <div class="portfolio__img">
-              <img src="assets/comingsoon.jpg" alt="Portfolio Items" />
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__title">Coming Soon...</h3>
-              <p class="portfolio__content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto dignissimos
-                pariatur dolor vitae assumenda, porro quaerat corporis quos placeat a alias
-                molestiae, totam, dolore cum perspiciatis. Voluptate dolorem doloremque nobis.
-              </p>
-              <a class="portfolio__link" href="#">See Work <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="portfolio__box">
-            <div class="portfolio__img">
-              <img src="assets/comingsoon.jpg" alt="Portfolio Items" />
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__title">Coming Soon...</h3>
-              <p class="portfolio__content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto dignissimos
-                pariatur dolor vitae assumenda, porro quaerat corporis quos placeat a alias
-                molestiae, totam, dolore cum perspiciatis. Voluptate dolorem doloremque nobis.
-              </p>
-              <a class="portfolio__link" href="#">See Work <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="section__footer">
-          <a href="#contact">
-            Ask for More Projects
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div> -->
-      </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="about">
-          <div class="about__left">
-            <div class="section__header">
-              <h2 class="section__title">About</h2>
-              <p class="section__subtitle">Few things about me</p>
-            </div>
-            <p class="about__bio">
-              Since I was young, I have always enjoyed solving puzzles. So that’s how I look at big data sets: to me, it is one big puzzle I want to solve.
-              Finding patterns nobody else sees is a challenge to me. Strong eye for detail and tenacity to never quit on something until it is absolutely perfect.
-              Relevant skills include machine learning, problem-solving, programming, and creative thinking.
-            </p>
-            <p class="about__bio">
-              A few interesting things about me. I love to watch science fiction (my favorite is "Ready: Player One").
-              I am also an avid gamer. I love to play competitive strategy games and first-person shooters. Lastly, I love learning.
-              Every day I push myself to learn something new, whether that be about machine learning, software engineering, or miscellaneous facts about the universe.
-            </p>
-            <h4 class="about__skillsTitle">Skills</h4>
-            <ul class="about__skillsList">
-              <li>Python</li>
-              <li>R</li>
-              <li>Data Analysis</li>
-              <li>SQL</li>
-              <li>Machine Learning</li>
-              <li>NoSql</li>
-              <li>MongoDB</li>
-              <li>BigQuery</li>
-              <li>Google Analytics (GA4)</li>
-              <li>Tableau</li>
-              <li>Looker Studio</li>
-              <li>NLP</li>
-              <li>API Testing & Integration</li>
-              <li>ETL</li>
-            </ul>
-          </div>
-          <div class="about__right">
-            <img src="assets/avatar.png" alt="Profile Picture" v />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <!-- <section class="container">
-      <div class="section" id="testimonials">
-        <div class="section__header section__header--center">
-          <h2 class="section__title">People Says</h2>
-          <p class="section__subtitle">What others think about me</p>
-        </div>
-        <div class="testimonials">
-          <div class="splide">
-            <div class="splide__track">
-              <div class="splide__list">
-                <div class="testimonials__box splide__slide">
-                  <div class="testimonials__content">
-                    <span class="testimonials__sign">
-                      <i class="bi bi-chat-square-quote"></i>
-                    </span>
-                    <p class="testimonials__quotes">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, maxime
-                      corporis deleniti distinctio ullam, accusamus debitis ratione unde rerum illo
-                      sit laudantium molestiae ipsum praesentium neque sed perferendis! Blanditiis,
-                      debitis.
-                    </p>
-                    <div class="testimonials__author">
-                      <div class="testimonials__authorInfo">
-                        <h4>Dennis Ivy</h4>
-                        <p>Instructor & Youtuber</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonials__box splide__slide">
-                  <div class="testimonials__content">
-                    <span class="testimonials__sign">
-                      <i class="bi bi-chat-square-quote"></i>
-                    </span>
-                    <p class="testimonials__quotes">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, maxime
-                      corporis deleniti distinctio ullam, accusamus debitis ratione unde rerum illo
-                      sit laudantium molestiae ipsum praesentium neque sed perferendis! Blanditiis,
-                      debitis.
-                    </p>
-                    <div class="testimonials__author">
-                      <div class="testimonials__authorInfo">
-                        <h4>Shahriar Parvez</h4>
-                        <p>Web Developer & UI Designer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonials__box splide__slide">
-                  <div class="testimonials__content">
-                    <span class="testimonials__sign">
-                      <i class="bi bi-chat-square-quote"></i>
-                    </span>
-                    <p class="testimonials__quotes">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, maxime
-                      corporis deleniti distinctio ullam, accusamus debitis ratione unde rerum illo
-                      sit laudantium molestiae ipsum praesentium neque sed perferendis! Blanditiis,
-                      debitis.
-                    </p>
-                    <div class="testimonials__author">
-                      <div class="testimonials__authorInfo">
-                        <h4>Praveen M.</h4>
-                        <p>Python, Django Developer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="contact">
-          <div class="contact__left">
-            <div class="section__header">
-              <h2 class="section__title">Contact Me</h2>
-              <p class="section__subtitle">Reach out to me, 24/7</p>
-            </div>
-            <div class="contact__info">
-              <p>Email Me:</p>
-              <a href="mailto:">ronaklodhaps110@gmail.com</a>
-            </div>
-
-            <div class="contact__info">
-              <p>Follow Me:</p>
-              <ul class="social">
-                <li>
-                  <a href="https://www.linkedin.com/in/ronak-lodha"><i class="bi bi-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="https://github.com/ronakkjain77"><i class="bi bi-github"></i></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/ronakkjain77"><i class="bi bi-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/ronakk____/"><i class="bi bi-instagram"></i></a>
-                </li>
+              <h3>What I did</h3>
+              <ul>
+                <li>Led query optimisation and dashboard engineering across the reporting layer.</li>
+                <li>Built new metrics aligned to actual business goals, replacing arbitrary operational KPIs.</li>
+                <li>Shipped critical feature requests and metric enhancements so the dashboards matched how teams really worked.</li>
+                <li>Turned around ad-hoc analysis and bug fixes fast enough to keep migration timelines intact.</li>
               </ul>
+              <h3>Outcome</h3>
+              <p>
+                Dashboard performance improved by roughly <strong>70%</strong>, putting data within
+                near real-time reach. The migration landed smoothly and operations stayed stable
+                afterwards — the part nobody notices when it goes right.
+              </p>
             </div>
+            <figure class="rec__viz">
+              <figcaption>Dashboard load time, before and after</figcaption>
+              <svg viewBox="0 0 320 170" role="img" aria-label="Bar chart: dashboard load time fell by about 70 percent after optimisation.">
+                <line class="ax" x1="86" y1="22" x2="86" y2="138"/>
+                <g class="barlbl">
+                  <text x="78" y="52" text-anchor="end">Before</text>
+                  <text x="78" y="112" text-anchor="end">After</text>
+                </g>
+                <rect class="bar bar--mute" x="88" y="34" width="158" height="26" rx="3"/>
+                <rect class="bar bar--hero grow" x="88" y="94" width="48" height="26" rx="3"/>
+                <text class="barval" x="254" y="52">baseline</text>
+                <text class="barval barval--hero" x="144" y="112">~70% faster</text>
+                <line class="ax ax--base" x1="86" y1="138" x2="300" y2="138"/>
+              </svg>
+              <p class="viz__note">Relative, from the reported ~70% improvement.</p>
+            </figure>
           </div>
-<!--           <div class="contact__right">
-            <form class="contact__form" action="#" method="post">
-              <div class="contact__fields">
-                <label for="name">Name</label>
-                <input type="name" name="name" id="name" placeholder="Your Name" />
-              </div>
-              <div class="contact__fields">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email Address" />
-              </div>
-              <div class="contact__fields">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Write Message..."></textarea>
-              </div>
-              <div class="contact__fields">
-                <button class="btn btn--main" type="submit">
-                  Send Message <i class="bi bi-arrow-right"></i>
-                </button>
-              </div>
-            </form>
-          </div> -->
+          <ul class="chips">
+            <li>SQL</li><li>Query optimisation</li><li>Dashboard engineering</li><li>KPI design</li><li>Stakeholder alignment</li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </details>
 
-    <footer class="footer">
-      <div class="footer__copyright">
-        <p>Made with &hearts; by <a href="https://ronakkjain77.github.io/portfolio/">Ronak</a></p>
-      </div>
-    </footer>
+      <!-- 2 -->
+      <details class="rec reveal" name="rec">
+        <summary>
+          <span class="rec__idx">02</span>
+          <span class="rec__title">
+            <strong>Marketing mix modeling across multiple client accounts</strong>
+            <span class="rec__org">Quilytics · Data Analyst</span>
+          </span>
+          <span class="rec__tag">Spend strategy</span>
+          <span class="rec__chev" aria-hidden="true"></span>
+        </summary>
+        <div class="rec__body">
+          <div class="rec__cols">
+            <div class="rec__col">
+              <h3>The problem</h3>
+              <p>
+                Clients were allocating marketing budget on last-click attribution and habit.
+                Channels that assisted but didn't close were invisible, so they were
+                systematically underfunded.
+              </p>
+              <h3>What I did</h3>
+              <ul>
+                <li>Built marketing mix models for multiple clients to measure true channel effectiveness.</li>
+                <li>Separated genuine channel contribution from baseline and seasonal effects.</li>
+                <li>Translated model output into spend recommendations a marketing lead could act on without reading a regression table.</li>
+              </ul>
+              <h3>Outcome</h3>
+              <p>
+                Budget conversations moved from opinion to evidence. Clients could see which
+                channels were carrying the result and reallocate accordingly.
+              </p>
+            </div>
+            <figure class="rec__viz">
+              <figcaption>How MMM splits a result <span class="tagmini">Illustrative</span></figcaption>
+              <svg viewBox="0 0 320 170" role="img" aria-label="Illustrative diagram: observed outcome decomposed into baseline, seasonality and individual channel contributions.">
+                <text class="vzlbl" x="8" y="20">Observed outcome</text>
+                <rect class="seg seg--mute" x="8" y="28" width="304" height="20" rx="3"/>
+                <path class="vzconn" d="M160 52 L160 64" />
+                <text class="vzlbl" x="8" y="80">Decomposed</text>
+                <g class="grow-row">
+                  <rect class="seg seg--mute" x="8" y="88" width="104" height="20" rx="3"/>
+                  <rect class="seg seg--s1" x="116" y="88" width="76" height="20" rx="3"/>
+                  <rect class="seg seg--s2" x="196" y="88" width="62" height="20" rx="3"/>
+                  <rect class="seg seg--s3" x="262" y="88" width="50" height="20" rx="3"/>
+                </g>
+                <g class="vzkey">
+                  <rect class="key key--mute" x="8"   y="126" width="9" height="9" rx="2"/><text x="22"  y="134">Baseline</text>
+                  <rect class="key key--s1"   x="88"  y="126" width="9" height="9" rx="2"/><text x="102" y="134">Channel A</text>
+                  <rect class="key key--s2"   x="176" y="126" width="9" height="9" rx="2"/><text x="190" y="134">Channel B</text>
+                  <rect class="key key--s3"   x="258" y="126" width="9" height="9" rx="2"/><text x="272" y="134">Other</text>
+                </g>
+              </svg>
+              <p class="viz__note">Schematic — shows the method, not client results.</p>
+            </figure>
+          </div>
+          <ul class="chips">
+            <li>Marketing Mix Modeling</li><li>Regression</li><li>Python</li><li>Time series</li><li>Client reporting</li>
+          </ul>
+        </div>
+      </details>
 
-    <!-- SplideJs v3 -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.min.js"></script>
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- App Scripts -->
-    <script src="scripts/app.js"></script>
-  </body>
+      <!-- 3 -->
+      <details class="rec reveal" name="rec">
+        <summary>
+          <span class="rec__idx">03</span>
+          <span class="rec__title">
+            <strong>Budget pacing that warns you before the money's gone</strong>
+            <span class="rec__org">Quilytics · Data Analyst</span>
+          </span>
+          <span class="rec__tag">Automation</span>
+          <span class="rec__chev" aria-hidden="true"></span>
+        </summary>
+        <div class="rec__body">
+          <div class="rec__cols">
+            <div class="rec__col">
+              <h3>The problem</h3>
+              <p>
+                Pacing was checked manually and retrospectively. By the time anyone noticed a
+                campaign was overspending or underspending, the window to correct it had closed.
+              </p>
+              <h3>What I did</h3>
+              <ul>
+                <li>Designed and implemented automation frameworks for budget pacing.</li>
+                <li>Made spend-versus-target visible in real time rather than at month end.</li>
+                <li>Built the alerting so drift surfaced while there was still budget left to steer.</li>
+              </ul>
+              <h3>Outcome</h3>
+              <p>
+                Spend control became proactive. The team stopped writing post-mortems about
+                budget and started adjusting mid-flight.
+              </p>
+            </div>
+            <figure class="rec__viz">
+              <figcaption>Pacing: actual against target <span class="tagmini">Illustrative</span></figcaption>
+              <svg viewBox="0 0 320 170" role="img" aria-label="Illustrative line chart: actual spend drifts above target pacing, with the gap flagged before period end.">
+                <g class="gridlines">
+                  <line x1="26" y1="30" x2="312" y2="30"/><line x1="26" y1="66" x2="312" y2="66"/>
+                  <line x1="26" y1="102" x2="312" y2="102"/>
+                </g>
+                <line class="ax ax--base" x1="26" y1="128" x2="312" y2="128"/>
+                <path class="ln ln--target" d="M26 128 L312 26"/>
+                <path class="ln ln--actual draw" d="M26 128 L74 112 L122 92 L170 60 L218 44 L266 30 L312 18"/>
+                <circle class="pt" cx="312" cy="18" r="4"/>
+                <g class="vzkey">
+                  <line class="key-ln key-ln--target" x1="26" y1="150" x2="44" y2="150"/><text x="50" y="153">Target</text>
+                  <line class="key-ln key-ln--actual" x1="104" y1="150" x2="122" y2="150"/><text x="128" y="153">Actual</text>
+                  <text class="vzflag" x="196" y="153">drift caught early</text>
+                </g>
+              </svg>
+              <p class="viz__note">Schematic — shows the mechanism, not client spend.</p>
+            </figure>
+          </div>
+          <ul class="chips">
+            <li>Automation</li><li>Python</li><li>Alerting</li><li>Spend analytics</li><li>Real-time reporting</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- 4 -->
+      <details class="rec reveal" name="rec">
+        <summary>
+          <span class="rec__idx">04</span>
+          <span class="rec__title">
+            <strong>Agentic AI solutions, built to actually ship</strong>
+            <span class="rec__org">Quilytics · Data Analyst</span>
+          </span>
+          <span class="rec__tag">Applied AI</span>
+          <span class="rec__chev" aria-hidden="true"></span>
+        </summary>
+        <div class="rec__body">
+          <div class="rec__cols">
+            <div class="rec__col">
+              <h3>The problem</h3>
+              <p>
+                Plenty of agentic AI demos survive a sales call and nothing after it. The hard
+                part isn't the model — it's the data underneath it and the path to production.
+              </p>
+              <h3>What I did</h3>
+              <ul>
+                <li>Contributed to the design of market-ready agentic AI solutions.</li>
+                <li>Built the data pipelines those agents depended on, so they ran on reliable inputs.</li>
+                <li>Shaped analytics workflows to be deployment-ready rather than notebook-only.</li>
+              </ul>
+              <h3>Outcome</h3>
+              <p>
+                Solutions that held up past the demo — because the pipeline, the data quality and
+                the deployment story were designed in from the start.
+              </p>
+            </div>
+            <figure class="rec__viz">
+              <figcaption>From source to agent, without a gap</figcaption>
+              <svg viewBox="0 0 320 170" role="img" aria-label="Flow diagram: source systems feed pipelines, which feed a modelled warehouse layer, which an agentic workflow consumes to produce a deployed output.">
+                <g class="flow">
+                  <rect x="10" y="20" width="86" height="34" rx="4"/><text x="53" y="41">Sources</text>
+                  <rect x="10" y="68" width="86" height="34" rx="4"/><text x="53" y="89">Pipelines</text>
+                  <rect x="117" y="44" width="86" height="34" rx="4"/><text x="160" y="65">Modelled</text>
+                  <rect class="flow--hero" x="224" y="44" width="86" height="34" rx="4"/><text class="hero-t" x="267" y="65">Agent</text>
+                  <rect x="117" y="112" width="193" height="34" rx="4"/><text x="213" y="133">Deployed workflow</text>
+                </g>
+                <g class="arrows">
+                  <path d="M96 37 L112 37 L112 56 L115 56"/>
+                  <path d="M96 85 L112 85 L112 66 L115 66"/>
+                  <path d="M203 61 L222 61"/>
+                  <path d="M267 78 L267 110"/>
+                </g>
+              </svg>
+              <p class="viz__note">Architecture shape, generalised across engagements.</p>
+            </figure>
+          </div>
+          <ul class="chips">
+            <li>Agentic AI</li><li>LLMs</li><li>Data pipelines</li><li>Solution design</li><li>Productionisation</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- 5 -->
+      <details class="rec reveal" name="rec">
+        <summary>
+          <span class="rec__idx">05</span>
+          <span class="rec__title">
+            <strong>Turning open-text survey answers into something you can query</strong>
+            <span class="rec__org">Viral Fission · Business Intelligence Analyst</span>
+          </span>
+          <span class="rec__tag">NLP</span>
+          <span class="rec__chev" aria-hidden="true"></span>
+        </summary>
+        <div class="rec__body">
+          <div class="rec__cols">
+            <div class="rec__col">
+              <h3>The problem</h3>
+              <p>
+                Users answered surveys in free text. That's the richest data in the product and
+                the least usable — thousands of responses nobody could aggregate.
+              </p>
+              <h3>What I did</h3>
+              <ul>
+                <li>Wrote a named entity recognition program in Jupyter to pull structured fields out of open-text responses.</li>
+                <li>Added sentiment analysis to classify whether a response was positive or negative about the question asked.</li>
+                <li>Built auto-tagging logic so new surveys classified themselves, and used OpenAI to drive campaign-assignment logic.</li>
+                <li>Designed the points system scoring Youth Ambassadors and Team Leaders across each IP in the app, and validated the automated allocation algorithm against the intended logic.</li>
+                <li>Moved reporting onto BigQuery and GA4, with Tableau on top.</li>
+              </ul>
+              <h3>Outcome</h3>
+              <p>
+                Free text became a queryable dimension. Performance scoring stopped being
+                manual, and the dashboards finally reflected what people actually wrote.
+              </p>
+            </div>
+            <figure class="rec__viz">
+              <figcaption>Unstructured in, structured out</figcaption>
+              <svg viewBox="0 0 320 170" role="img" aria-label="Diagram: free-text responses pass through named entity recognition and sentiment scoring to produce structured, queryable fields.">
+                <g class="txtlines">
+                  <rect x="10" y="26" width="74" height="6" rx="3"/><rect x="10" y="40" width="58" height="6" rx="3"/>
+                  <rect x="10" y="54" width="68" height="6" rx="3"/><rect x="10" y="68" width="44" height="6" rx="3"/>
+                  <rect x="10" y="82" width="64" height="6" rx="3"/>
+                </g>
+                <text class="vzlbl" x="10" y="106">Free text</text>
+                <g class="arrows"><path d="M92 55 L116 55"/></g>
+                <g class="flow">
+                  <rect x="120" y="26" width="80" height="26" rx="4"/><text x="160" y="43">NER</text>
+                  <rect x="120" y="60" width="80" height="26" rx="4"/><text x="160" y="77">Sentiment</text>
+                </g>
+                <g class="arrows"><path d="M200 39 L216 39 L216 55 L224 55"/><path d="M200 73 L216 73 L216 55 L224 55"/></g>
+                <g class="cells">
+                  <rect class="cell--hero" x="228" y="26" width="38" height="18" rx="2"/><rect x="270" y="26" width="38" height="18" rx="2"/>
+                  <rect x="228" y="48" width="38" height="18" rx="2"/><rect class="cell--hero" x="270" y="48" width="38" height="18" rx="2"/>
+                  <rect x="228" y="70" width="38" height="18" rx="2"/><rect x="270" y="70" width="38" height="18" rx="2"/>
+                </g>
+                <text class="vzlbl" x="228" y="106">Queryable</text>
+              </svg>
+              <p class="viz__note">Pipeline shape for the survey NLP work.</p>
+            </figure>
+          </div>
+          <ul class="chips">
+            <li>NER</li><li>Sentiment analysis</li><li>Python</li><li>BigQuery</li><li>GA4</li><li>Tableau</li><li>OpenAI API</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── PATH ───────────────────────── -->
+<section class="band" id="path">
+  <div class="shell">
+    <header class="shead reveal">
+      <span class="shead__n">03</span>
+      <h2>Path</h2>
+      <span class="shead__rule" aria-hidden="true"></span>
+      <span class="shead__meta">2020 — present</span>
+    </header>
+
+    <ol class="tl">
+      <li class="tl__i tl__i--live reveal">
+        <div class="tl__when">Aug 2026 — present</div>
+        <div class="tl__what">
+          <h3>Senior Data Analyst <span>Iksula</span></h3>
+          <p class="tl__meta">Mumbai · Hybrid · Full-time</p>
+          <p>Analysis, data engineering and applied AI/ML, plus the technical side of pre-sales and solutions.</p>
+        </div>
+      </li>
+      <li class="tl__i reveal">
+        <div class="tl__when">Dec 2024 — Aug 2026</div>
+        <div class="tl__what">
+          <h3>Data Analyst <span>Quilytics</span></h3>
+          <p class="tl__meta">Mumbai · Hybrid · Full-time · 1 yr 9 mos</p>
+          <p>Agentic AI solutions, marketing mix modeling, budget-pacing automation and end-to-end pipelines. Seconded to Google's logistics teams (xWF) as a Logistics Analyst, where dashboard performance improved ~70%.</p>
+        </div>
+      </li>
+      <li class="tl__i reveal">
+        <div class="tl__when">Oct 2023 — Nov 2024</div>
+        <div class="tl__what">
+          <h3>Senior Business Intelligence Analyst <span>Viral Fission</span></h3>
+          <p class="tl__meta">Mumbai · On-site</p>
+          <p>Cross-IP user points system, survey auto-tagging, OpenAI-driven campaign assignment, and reporting rebuilt on BigQuery, GA4 and Tableau.</p>
+        </div>
+      </li>
+      <li class="tl__i reveal">
+        <div class="tl__when">Jul 2022 — Oct 2023</div>
+        <div class="tl__what">
+          <h3>Executive — Business Intelligence Analyst <span>Viral Fission</span></h3>
+          <p class="tl__meta">Mumbai · On-site</p>
+          <p>NER and sentiment analysis on open-text surveys, performance scoring for ambassadors and team leaders, dashboard migration to Angular, and day-to-day lead of the data entry and research interns.</p>
+        </div>
+      </li>
+      <li class="tl__i reveal">
+        <div class="tl__when">May 2022 — Jul 2022</div>
+        <div class="tl__what">
+          <h3>Data Science Intern <span>Forsk Technologies</span></h3>
+          <p class="tl__meta">Remote · Internship</p>
+          <p>Data science training and internship programme.</p>
+        </div>
+      </li>
+      <li class="tl__i reveal">
+        <div class="tl__when">Mar 2022 — Apr 2022</div>
+        <div class="tl__what">
+          <h3>Data Analyst Intern <span>Vitara Enterprises</span></h3>
+          <p class="tl__meta">Remote · Internship</p>
+        </div>
+      </li>
+      <li class="tl__i reveal">
+        <div class="tl__when">Aug 2021 — Oct 2021</div>
+        <div class="tl__what">
+          <h3>Python Instructor <span>Self-employed</span></h3>
+          <p class="tl__meta">Greater London, UK · Remote</p>
+          <p>Taught Python fundamentals — pandas, NumPy, Matplotlib — to three students at a UK school.</p>
+        </div>
+      </li>
+      <li class="tl__i reveal">
+        <div class="tl__when">Aug 2020 — Sep 2020</div>
+        <div class="tl__what">
+          <h3>Frontend Web Developer <span>XUME</span></h3>
+          <p class="tl__meta">Remote · Internship</p>
+          <p>Built the company website front-end with a team of two.</p>
+        </div>
+      </li>
+      <li class="tl__i reveal">
+        <div class="tl__when">Mar 2020 — Apr 2020</div>
+        <div class="tl__what">
+          <h3>Application Analyst <span>XUME</span></h3>
+          <p class="tl__meta">Mumbai · Hybrid · Internship</p>
+          <p>Test cases and QA on the beta app, with a team of three.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOOLKIT ───────────────────────── -->
+<section class="band band--alt" id="toolkit">
+  <div class="shell">
+    <header class="shead reveal">
+      <span class="shead__n">04</span>
+      <h2>Toolkit</h2>
+      <span class="shead__rule" aria-hidden="true"></span>
+      <span class="shead__meta">Grouped by what it's for</span>
+    </header>
+
+    <div class="kits">
+      <section class="kit reveal">
+        <h3>Analysis &amp; modelling</h3>
+        <ul class="chips chips--lg">
+          <li>Marketing Mix Modeling</li><li>A/B testing</li><li>Time series forecasting</li>
+          <li>Product analytics</li><li>KPI design</li><li>Statistical analysis</li><li>Data-driven insight</li>
+        </ul>
+      </section>
+      <section class="kit reveal">
+        <h3>Data engineering</h3>
+        <ul class="chips chips--lg">
+          <li>SQL</li><li>BigQuery</li><li>ETL pipelines</li><li>Data modelling</li>
+          <li>Data architecture</li><li>MongoDB</li><li>Data quality</li><li>Beautiful Soup</li>
+        </ul>
+      </section>
+      <section class="kit reveal">
+        <h3>AI &amp; machine learning</h3>
+        <ul class="chips chips--lg">
+          <li>Agentic AI</li><li>LLMs</li><li>NLP</li><li>Named entity recognition</li>
+          <li>Sentiment analysis</li><li>TensorFlow</li><li>scikit-learn</li>
+        </ul>
+      </section>
+      <section class="kit reveal">
+        <h3>Visualisation &amp; BI</h3>
+        <ul class="chips chips--lg">
+          <li>Tableau</li><li>Looker Studio</li><li>Google Analytics 4</li>
+          <li>Dashboard engineering</li><li>Query optimisation</li>
+        </ul>
+      </section>
+      <section class="kit reveal">
+        <h3>Languages &amp; platforms</h3>
+        <ul class="chips chips--lg">
+          <li>Python</li><li>pandas</li><li>NumPy</li><li>R</li><li>Jupyter</li>
+          <li>Git</li><li>Linux</li><li>REST APIs</li><li>Azure</li><li>AWS</li><li>Terraform</li><li>Ansible</li>
+        </ul>
+      </section>
+      <section class="kit reveal">
+        <h3>Working with people</h3>
+        <ul class="chips chips--lg">
+          <li>Pre-sales solutioning</li><li>Requirement discovery</li><li>Technical demos</li>
+          <li>Stakeholder management</li><li>Presentations</li><li>Mentoring</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── OFFLINE ───────────────────────── -->
+<section class="band band--feature" id="offline">
+  <div class="shell">
+    <header class="shead reveal">
+      <span class="shead__n">05</span>
+      <h2>Offline</h2>
+      <span class="shead__rule" aria-hidden="true"></span>
+      <span class="shead__meta">The part that isn't on a dashboard</span>
+    </header>
+
+    <div class="offline">
+      <div class="offline__lead reveal">
+        <p class="offline__big">
+          Before any of this, I competed on skates. <em>National-level skater, and a U19
+          international medalist for India</em> — one gold, two silver.
+        </p>
+        <p>
+          Competitive sport teaches a specific thing that transfers: you don't get credit for
+          effort, only for the result on the clock. It's the same instinct I bring to analysis —
+          the work isn't done when the model fits, it's done when someone makes a better
+          decision because of it.
+        </p>
+      </div>
+      <dl class="medals reveal">
+        <div><dt>Gold</dt><dd>1</dd></div>
+        <div><dt>Silver</dt><dd>2</dd></div>
+        <div><dt>Level</dt><dd>U19 International</dd></div>
+      </dl>
+      <ul class="offline__also reveal">
+        <li><span>Also</span> Strength training and fitness</li>
+        <li><span>Also</span> Building things that don't need to exist</li>
+        <li><span>Also</span> Science fiction, reliably</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── CREDENTIALS ───────────────────────── -->
+<section class="band" id="credentials">
+  <div class="shell">
+    <header class="shead reveal">
+      <span class="shead__n">06</span>
+      <h2>Credentials</h2>
+      <span class="shead__rule" aria-hidden="true"></span>
+      <span class="shead__meta">Education &amp; certification</span>
+    </header>
+
+    <div class="creds">
+      <section class="reveal">
+        <h3 class="creds__h">Education</h3>
+        <ul class="creds__list">
+          <li>
+            <div class="creds__row"><strong>BSc, Information Technology</strong><span>2019 — 2022</span></div>
+            <p>Bhavan's College, Mumbai · 8.58 CGPA</p>
+          </li>
+          <li>
+            <div class="creds__row"><strong>Diploma, Web &amp; Graphics Design</strong><span>2018</span></div>
+            <p>E-Connect Computer Education (CBITVT) · A+ · 152/200</p>
+          </li>
+          <li>
+            <div class="creds__row"><strong>Higher Secondary, Science</strong><span>2017 — 2019</span></div>
+            <p>Nirmala Memorial Foundation College, Mumbai</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reveal">
+        <h3 class="creds__h">Certifications</h3>
+        <ul class="creds__list">
+          <li>
+            <div class="creds__row"><strong>BCG GenAI Job Simulation</strong><span>May 2024</span></div>
+            <p>Forage · Python, NLP</p>
+          </li>
+          <li>
+            <div class="creds__row"><strong>Complete ML &amp; Data Science Bootcamp</strong><span>Apr 2022</span></div>
+            <p>Udemy</p>
+          </li>
+          <li>
+            <div class="creds__row"><strong>R Programming</strong><span>Apr 2022</span></div>
+            <p>Udemy</p>
+          </li>
+          <li>
+            <div class="creds__row"><strong>Azure Architect Technologies (AZ-303)</strong><span>Aug 2021</span></div>
+            <p>Technical Guftgu</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── CONTACT ───────────────────────── -->
+<section class="band band--alt" id="contact">
+  <div class="shell">
+    <header class="shead reveal">
+      <span class="shead__n">07</span>
+      <h2>Contact</h2>
+      <span class="shead__rule" aria-hidden="true"></span>
+      <span class="shead__meta">Mumbai · IST (UTC+5:30)</span>
+    </header>
+
+    <div class="contact">
+      <div class="contact__lead reveal">
+        <p class="contact__big">Got a data problem that's really a decision problem?</p>
+        <p>Email is the surest way to reach me. I read everything, and I reply to anything with a real question in it.</p>
+        <a class="btn btn--primary btn--lg" href="mailto:ronaklodhaps110@gmail.com">ronaklodhaps110@gmail.com</a>
+      </div>
+
+      <ul class="contact__links reveal">
+        <li>
+          <a href="https://www.linkedin.com/in/ronak-lodha" target="_blank" rel="noopener noreferrer">
+            <span class="cl__k">LinkedIn</span>
+            <span class="cl__v">in/ronak-lodha</span>
+            <span class="cl__n">12,100+ followers</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ronakkjain77" target="_blank" rel="noopener noreferrer">
+            <span class="cl__k">GitHub</span>
+            <span class="cl__v">ronakkjain77</span>
+            <span class="cl__n">Code and experiments</span>
+          </a>
+        </li>
+        <li>
+          <a href="assets/resume.pdf" download>
+            <span class="cl__k">Résumé</span>
+            <span class="cl__v">PDF download</span>
+            <span class="cl__n">Full history</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="shell foot__in">
+    <p>© <span id="yr">2026</span> Ronak Lodha · Mumbai, India</p>
+    <p class="foot__colophon">Instrument Serif &amp; Sans, JetBrains Mono. Hand-built, no framework.</p>
+  </div>
+</footer>
+
+<dialog class="cmd" id="cmd" aria-label="Jump to section">
+  <form method="dialog" class="cmd__form">
+    <div class="cmd__bar">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6" stroke-linecap="round"/></svg>
+      <input id="cmdInput" type="text" placeholder="Jump to…" autocomplete="off" aria-label="Filter sections">
+      <kbd>Esc</kbd>
+    </div>
+    <ul class="cmd__list" id="cmdList" role="listbox" aria-label="Sections"></ul>
+  </form>
+</dialog>
+
+<script src="scripts/main.js" defer></script>
+</body>
 </html>

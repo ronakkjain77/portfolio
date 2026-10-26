@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ronakkjain77.github.io/portfolio/sitemap.xml
