@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ronak Lodha — Senior Data Analyst</title>
-<meta name="description" content="Senior Data Analyst at Iksula, Mumbai. Analytics, data engineering and applied AI — plus the technical side of pre-sales and solutions. Previously Quilytics (Google logistics, marketing mix modeling) and Viral Fission.">
+<meta name="description" content="Senior Data Analyst at Iksula, Mumbai — pre-sales and solutions. Demand planning platforms, financial leakage recovery and search-readiness analytics. Previously Quilytics (Google logistics, marketing mix modeling) and Viral Fission.">
 <meta name="author" content="Ronak Lodha">
 <meta name="theme-color" content="#0a0c10" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
@@ -38,13 +38,13 @@
   "@type": "Person",
   "name": "Ronak Lodha",
   "alternateName": "Ronak Harshad Lodha",
-  "jobTitle": "Senior Data Analyst",
+  "jobTitle": "Senior Data Analyst — Pre-Sales & Solutions",
   "worksFor": { "@type": "Organization", "name": "Iksula" },
   "url": "https://ronakkjain77.github.io/portfolio/",
   "email": "mailto:ronaklodhaps110@gmail.com",
   "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "Bhavan's College, Mumbai" },
-  "knowsAbout": ["Data Analysis","Marketing Mix Modeling","Data Engineering","BigQuery","SQL","Python","Business Intelligence","Natural Language Processing","Agentic AI","Tableau","Google Analytics 4"],
+  "knowsAbout": ["Data Analysis","Demand Planning","Marketing Mix Modeling","Data Engineering","BigQuery","SQL","Python","FastAPI","PostgreSQL","Business Intelligence","Natural Language Processing","Agentic AI","Tableau","Power BI","Apache Airflow","Google Analytics 4","Retail Analytics","Logistics Analytics"],
   "sameAs": ["https://www.linkedin.com/in/ronak-lodha","https://github.com/ronakkjain77"]
 }
 </script>
@@ -222,6 +222,12 @@
         <li><span>AI &amp; ML</span><em>Applied models, agentic workflows, LLMs</em></li>
         <li><span>Pre-sales &amp; solutions</span><em>Scoping, solution design, technical demos</em></li>
       </ul>
+
+      <ul class="now__ships reveal">
+        <li><em>01</em><span>Demand planning platform</span><i>Multi-tenant SaaS, forecasting through production planning</i></li>
+        <li><em>02</em><span>Leakage &amp; Recovery Accelerator</span><i>Contract-breach detection to recovered cash, 7 scenarios</i></li>
+        <li><em>03</em><span>Search Readiness Review</span><i>Product-data scoring against live SERP and competitor data</i></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -233,7 +239,7 @@
       <span class="shead__n">02</span>
       <h2>Selected work</h2>
       <span class="shead__rule" aria-hidden="true"></span>
-      <span class="shead__meta">5 records · expand to read</span>
+      <span class="shead__meta">8 records · expand to read</span>
     </header>
 
     <p class="band__lede reveal">
@@ -247,6 +253,197 @@
       <details class="rec reveal" name="rec">
         <summary>
           <span class="rec__idx">01</span>
+          <span class="rec__title">
+            <strong>A demand planning platform that plans past the forecast</strong>
+            <span class="rec__org">Iksula · multi-tenant SaaS · built end to end</span>
+          </span>
+          <span class="rec__tag">Platform</span>
+          <span class="rec__chev" aria-hidden="true"></span>
+        </summary>
+        <div class="rec__body">
+          <div class="rec__cols">
+            <div class="rec__col">
+              <h3>The problem</h3>
+              <p>
+                Most demand planning tools stop at a forecast and leave the buyer to work out
+                what to actually order. The forecast is the easy half — the hard half is turning
+                it into a purchase order with the right date, the right buffer and a quantity
+                that fits on a truck.
+              </p>
+              <h3>What I did</h3>
+              <ul>
+                <li>Built the platform end to end on FastAPI, React and Docker, multi-tenant from the start, with a BRD and a repeatable client onboarding model.</li>
+                <li>Built segmentation and model-zoo backtesting that picks its own champion per series, with ABC/XYZ policies and accuracy/FVA tracking.</li>
+                <li>Extended past forecasting into purchase, distribution and production planning — lead-time-derived order dates, buffers sized from measured delivery variability, truck and case rounding, shelf-life gating, fair-share allocation.</li>
+                <li>Automated the painful part of onboarding: confidence-scored column auto-mapping, idempotent loads, and a readiness engine that quantifies the forecast-accuracy cost of every data gap.</li>
+                <li>Productised a 48-hour Diagnostic — three files in, data readiness and baseline accuracy out — seeding a Diagnostic → Planner → Intelligence ladder.</li>
+              </ul>
+              <h3>Outcome</h3>
+              <p>
+                A planning module measured on one honest trust metric: <strong>proposals released
+                unedited</strong>. A human still issues every indent — the system has to earn the
+                click, not assume it. Onboarding compressed into a 6-week, 8-session model.
+              </p>
+            </div>
+            <figure class="rec__viz">
+              <figcaption>Model zoo picks its own champion <span class="tagmini">Illustrative</span></figcaption>
+              <svg viewBox="0 0 320 170" role="img" aria-label="Illustrative chart: several candidate forecasting models are backtested and the best performer is automatically selected as champion.">
+                <line class="ax" x1="78" y1="14" x2="78" y2="132"/>
+                <g class="grow-row">
+                  <rect class="bar bar--mute" x="80" y="21" width="78" height="18" rx="3"/>
+                  <rect class="bar bar--mute" x="80" y="45" width="112" height="18" rx="3"/>
+                  <rect class="bar bar--mute" x="80" y="69" width="130" height="18" rx="3"/>
+                  <rect class="bar bar--mute" x="80" y="93" width="158" height="18" rx="3"/>
+                  <rect class="bar bar--hero" x="80" y="117" width="180" height="18" rx="3"/>
+                </g>
+                <g class="barlbl">
+                  <text x="72" y="34" text-anchor="end">Naive</text>
+                  <text x="72" y="58" text-anchor="end">ETS</text>
+                  <text x="72" y="82" text-anchor="end">ARIMA</text>
+                  <text x="72" y="106" text-anchor="end">Boosted</text>
+                  <text x="72" y="130" text-anchor="end">Ensemble</text>
+                </g>
+                <text class="barval barval--hero" x="266" y="130">champion</text>
+                <text class="vzflag" x="80" y="152">Backtest accuracy &#8594;</text>
+              </svg>
+              <p class="viz__note">Mechanism, not client results — selection runs per series.</p>
+            </figure>
+          </div>
+          <ul class="chips">
+            <li>FastAPI</li><li>React</li><li>Docker</li><li>Forecasting</li><li>Backtesting</li>
+            <li>ABC/XYZ</li><li>FVA</li><li>Supply planning</li><li>Multi-tenant SaaS</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- 2 -->
+      <details class="rec reveal" name="rec">
+        <summary>
+          <span class="rec__idx">02</span>
+          <span class="rec__title">
+            <strong>Finding the money that quietly leaks out of a contract</strong>
+            <span class="rec__org">Iksula · Leakage &amp; Recovery Accelerator · demo → production</span>
+          </span>
+          <span class="rec__tag">7 scenarios</span>
+          <span class="rec__chev" aria-hidden="true"></span>
+        </summary>
+        <div class="rec__body">
+          <div class="rec__cols">
+            <div class="rec__col">
+              <h3>The problem</h3>
+              <p>
+                Contracts say what a fee, a deduction or a payment should be. Reality often
+                disagrees, quietly and at scale. Finance teams find out months later, if at all —
+                and a detection tool that stops at a flagged row has not recovered any cash.
+              </p>
+              <h3>What I did</h3>
+              <ul>
+                <li>Scaled a demo webapp into a shippable product for CFOs and finance teams: re-platformed MongoDB to PostgreSQL, rebuilt the UI on React 19, added CI and AWS ECS Fargate deployment behind a WAF.</li>
+                <li>Built a versioned no-code truth layer plus 10 deterministic evaluators that catch fees, deductions and payments breaching signed contract terms — deterministic, so a finding can be defended line by line.</li>
+                <li>Broadened the market beyond marketplace partners to 7 leakage scenarios — B2B short payments, overdue receivables, unearned discounts, AP duplicates and overpayments, SaaS overbilling, processing fees, royalty underpayment — packaged as a sellable Scenario Library.</li>
+                <li>Closed the loop from detection to recovered cash: escalation, dual-control approval, AI-drafted claim emails, follow-ups, recovery and write-off, with a full audit trail.</li>
+                <li>Shipped 6-role access control, so a junior analyst can flag and escalate but never act beyond their authority; multi-brand with a super-admin console.</li>
+              </ul>
+              <h3>Outcome</h3>
+              <p>
+                A product that goes all the way from "this invoice breaches the contract" to
+                money actually back in the account — with the paper trail an auditor will ask for.
+              </p>
+            </div>
+            <figure class="rec__viz">
+              <figcaption>Detection through to recovered cash</figcaption>
+              <svg viewBox="0 0 320 170" role="img" aria-label="Flow diagram: detection leads to escalation and dual-control approval, then an AI-drafted claim, follow-up and recovery, with a full audit trail.">
+                <g class="flow">
+                  <rect x="8" y="24" width="92" height="28" rx="4"/><text x="54" y="42">Detect</text>
+                  <rect x="112" y="24" width="92" height="28" rx="4"/><text x="158" y="42">Escalate</text>
+                  <rect x="216" y="24" width="96" height="28" rx="4"/><text x="264" y="42">Approve</text>
+                  <rect x="8" y="104" width="92" height="28" rx="4"/><text x="54" y="122">Claim</text>
+                  <rect x="112" y="104" width="92" height="28" rx="4"/><text x="158" y="122">Follow up</text>
+                  <rect class="flow--hero" x="216" y="104" width="96" height="28" rx="4"/><text class="hero-t" x="264" y="122">Recover</text>
+                </g>
+                <g class="arrows">
+                  <path d="M100 38 L110 38"/>
+                  <path d="M204 38 L214 38"/>
+                  <path d="M264 52 L264 74 L54 74 L54 102"/>
+                  <path d="M100 118 L110 118"/>
+                  <path d="M204 118 L214 118"/>
+                </g>
+                <text class="vzflag" x="60" y="68">dual control</text>
+                <text class="vzflag" x="8" y="156">Every step written to an audit trail</text>
+              </svg>
+              <p class="viz__note">Write-off is the other terminal state, equally logged.</p>
+            </figure>
+          </div>
+          <ul class="chips">
+            <li>PostgreSQL</li><li>React 19</li><li>AWS ECS Fargate</li><li>CI/CD</li>
+            <li>Rules engines</li><li>Finance analytics</li><li>RBAC</li><li>Audit trail</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- 3 -->
+      <details class="rec reveal" name="rec">
+        <summary>
+          <span class="rec__idx">03</span>
+          <span class="rec__title">
+            <strong>Proving an SEO problem was a data problem</strong>
+            <span class="rec__org">Iksula · enterprise retail client · search readiness review</span>
+          </span>
+          <span class="rec__tag">8.1% vs 19.5%</span>
+          <span class="rec__chev" aria-hidden="true"></span>
+        </summary>
+        <div class="rec__body">
+          <div class="rec__cols">
+            <div class="rec__col">
+              <h3>The problem</h3>
+              <p>
+                A large retailer was ranking for a lot of keywords and converting almost none of
+                that into top-three positions. The instinct in the room was to rebuild the
+                website. That is an expensive instinct to act on without evidence.
+              </p>
+              <h3>What I did</h3>
+              <ul>
+                <li>Scored 500 commercially-weighted products, drawn from a 13,678-product catalogue across 52 sub-categories, on 11 on-page parameters — using a scoring algorithm already validated on 100k+ products.</li>
+                <li>Benchmarked against live SERP data — real ranking keywords, real volumes, real positions — plus competitor page crawls, so the comparison was like-for-like rather than keyword guesswork.</li>
+                <li>Turned 500 rows into a per-product work queue naming the weakest link and the specific fix, rolled up to the 6 highest-payback fixes in order.</li>
+                <li>Delivered 3 Excel studies, a client deck and speaker notes, and scripted the pipeline so it re-runs across the full catalogue and measures movement after fixes land.</li>
+              </ul>
+              <h3>Outcome</h3>
+              <p>
+                The constraint came down to one line: <strong>189,696 organic keywords, but only
+                8.1% of non-branded terms in Google's top 3</strong> — against 19.5% for online-only
+                rivals a fraction of the size. The bottleneck was product data, not site
+                architecture. That reframed the whole remediation budget.
+              </p>
+            </div>
+            <figure class="rec__viz">
+              <figcaption>Non-branded keywords ranking in Google's top 3</figcaption>
+              <svg viewBox="0 0 320 170" role="img" aria-label="Bar chart: 8.1 percent of the client's non-branded keywords rank in Google's top three, against 19.5 percent for far smaller online-only rivals.">
+                <text class="vzlbl" x="8" y="24">This client</text>
+                <rect class="bar bar--hero grow" x="8" y="32" width="108" height="22" rx="3"/>
+                <text class="barval barval--hero" x="124" y="48">8.1%</text>
+
+                <text class="vzlbl" x="8" y="88">Online-only rivals, far smaller</text>
+                <rect class="bar bar--mute" x="8" y="96" width="260" height="22" rx="3"/>
+                <text class="barval" x="276" y="112">19.5%</text>
+
+                <line class="ax ax--base" x1="8" y1="134" x2="312" y2="134"/>
+                <text class="vzflag" x="8" y="152">Share of non-branded terms in the top 3</text>
+              </svg>
+              <p class="viz__note">Measured across 189,696 organic keywords.</p>
+            </figure>
+          </div>
+          <ul class="chips">
+            <li>SERP data</li><li>Competitor crawls</li><li>Retail analytics</li>
+            <li>Scoring models</li><li>Python</li><li>Excel</li><li>Client deck</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- 1 -->
+      <details class="rec reveal" name="rec">
+        <summary>
+          <span class="rec__idx">04</span>
           <span class="rec__title">
             <strong>Making Google's logistics dashboards fast enough to act on</strong>
             <span class="rec__org">Quilytics · client project for Google (xWF) · Logistics Analyst</span>
@@ -265,8 +462,8 @@
               </p>
               <h3>What I did</h3>
               <ul>
-                <li>Led query optimisation and dashboard engineering across the reporting layer.</li>
-                <li>Built new metrics aligned to actual business goals, replacing arbitrary operational KPIs.</li>
+                <li>Led SQL query optimisation and dashboard engineering on BigQuery, across large-scale logistics datasets.</li>
+                <li>Built new logistics metrics — On-Time Receiving (OTR) among them — aligned to real business goals, replacing arbitrary operational KPIs.</li>
                 <li>Shipped critical feature requests and metric enhancements so the dashboards matched how teams really worked.</li>
                 <li>Turned around ad-hoc analysis and bug fixes fast enough to keep migration timelines intact.</li>
               </ul>
@@ -295,7 +492,7 @@
             </figure>
           </div>
           <ul class="chips">
-            <li>SQL</li><li>Query optimisation</li><li>Dashboard engineering</li><li>KPI design</li><li>Stakeholder alignment</li>
+            <li>SQL</li><li>BigQuery</li><li>Query optimisation</li><li>Dashboard engineering</li><li>KPI design</li><li>Stakeholder alignment</li>
           </ul>
         </div>
       </details>
@@ -303,7 +500,7 @@
       <!-- 2 -->
       <details class="rec reveal" name="rec">
         <summary>
-          <span class="rec__idx">02</span>
+          <span class="rec__idx">05</span>
           <span class="rec__title">
             <strong>Marketing mix modeling across multiple client accounts</strong>
             <span class="rec__org">Quilytics · Data Analyst</span>
@@ -364,7 +561,7 @@
       <!-- 3 -->
       <details class="rec reveal" name="rec">
         <summary>
-          <span class="rec__idx">03</span>
+          <span class="rec__idx">06</span>
           <span class="rec__title">
             <strong>Budget pacing that warns you before the money's gone</strong>
             <span class="rec__org">Quilytics · Data Analyst</span>
@@ -421,7 +618,7 @@
       <!-- 4 -->
       <details class="rec reveal" name="rec">
         <summary>
-          <span class="rec__idx">04</span>
+          <span class="rec__idx">07</span>
           <span class="rec__title">
             <strong>Agentic AI solutions, built to actually ship</strong>
             <span class="rec__org">Quilytics · Data Analyst</span>
@@ -478,7 +675,7 @@
       <!-- 5 -->
       <details class="rec reveal" name="rec">
         <summary>
-          <span class="rec__idx">05</span>
+          <span class="rec__idx">08</span>
           <span class="rec__title">
             <strong>Turning open-text survey answers into something you can query</strong>
             <span class="rec__org">Viral Fission · Business Intelligence Analyst</span>
@@ -557,9 +754,9 @@
       <li class="tl__i tl__i--live reveal">
         <div class="tl__when">Aug 2026 — present</div>
         <div class="tl__what">
-          <h3>Senior Data Analyst <span>Iksula</span></h3>
+          <h3>Senior Data Analyst — Pre-Sales &amp; Solutions <span>Iksula</span></h3>
           <p class="tl__meta">Mumbai · Hybrid · Full-time</p>
-          <p>Analysis, data engineering and applied AI/ML, plus the technical side of pre-sales and solutions.</p>
+          <p>Analysis, data engineering and applied AI/ML, plus the technical side of pre-sales and solutions. Built a multi-tenant demand planning platform (FastAPI, React, Docker) from forecasting to production planning; took a leakage-recovery demo to production on AWS with a no-code contract-truth layer and 10 evaluators across 7 scenarios; and scored 500 products on 11 SEO parameters against live SERP data, isolating product data — not the site — as the constraint.</p>
         </div>
       </li>
       <li class="tl__i reveal">
@@ -567,7 +764,7 @@
         <div class="tl__what">
           <h3>Data Analyst <span>Quilytics</span></h3>
           <p class="tl__meta">Mumbai · Hybrid · Full-time · 1 yr 9 mos</p>
-          <p>Agentic AI solutions, marketing mix modeling, budget-pacing automation and end-to-end pipelines. Seconded to Google's logistics teams (xWF) as a Logistics Analyst, where dashboard performance improved ~70%.</p>
+          <p>Agentic AI solutions, marketing mix modeling, budget-pacing automation and end-to-end pipelines. Seconded to Google's logistics teams (xWF) as a Logistics Analyst: built new logistics metrics including On-Time Receiving (OTR), and led SQL and BigQuery query optimisation that improved dashboard performance ~70%.</p>
         </div>
       </li>
       <li class="tl__i reveal">
@@ -575,7 +772,7 @@
         <div class="tl__what">
           <h3>Senior Business Intelligence Analyst <span>Viral Fission</span></h3>
           <p class="tl__meta">Mumbai · On-site</p>
-          <p>Cross-IP user points system, survey auto-tagging, OpenAI-driven campaign assignment, and reporting rebuilt on BigQuery, GA4 and Tableau.</p>
+          <p>Cross-IP user points system driving engagement and retention, survey auto-tagging and OpenAI-driven campaign assignment. Restructured dashboards in SQL, used MongoDB aggregation pipelines to unwind and transform data, and brought GA4 and Google Tag Manager into the lead-to-customer journey.</p>
         </div>
       </li>
       <li class="tl__i reveal">
@@ -644,14 +841,16 @@
         <h3>Analysis &amp; modelling</h3>
         <ul class="chips chips--lg">
           <li>Marketing Mix Modeling</li><li>A/B testing</li><li>Time series forecasting</li>
-          <li>Product analytics</li><li>KPI design</li><li>Statistical analysis</li><li>Data-driven insight</li>
+          <li>Demand planning</li><li>Product analytics</li><li>KPI design</li><li>Statistical analysis</li>
+          <li>Retail analytics</li><li>Logistics analytics</li>
         </ul>
       </section>
       <section class="kit reveal">
         <h3>Data engineering</h3>
         <ul class="chips chips--lg">
-          <li>SQL</li><li>BigQuery</li><li>ETL pipelines</li><li>Data modelling</li>
-          <li>Data architecture</li><li>MongoDB</li><li>Data quality</li><li>Beautiful Soup</li>
+          <li>SQL</li><li>BigQuery</li><li>ETL pipelines</li><li>Apache Airflow</li><li>Data warehousing</li>
+          <li>Data modelling</li><li>Data architecture</li><li>PostgreSQL</li><li>MongoDB</li>
+          <li>Data quality</li><li>Beautiful Soup</li>
         </ul>
       </section>
       <section class="kit reveal">
@@ -664,15 +863,16 @@
       <section class="kit reveal">
         <h3>Visualisation &amp; BI</h3>
         <ul class="chips chips--lg">
-          <li>Tableau</li><li>Looker Studio</li><li>Google Analytics 4</li>
-          <li>Dashboard engineering</li><li>Query optimisation</li>
+          <li>Tableau</li><li>Power BI</li><li>Looker Studio</li><li>Google Analytics 4</li>
+          <li>Google Tag Manager</li><li>Advanced Excel</li><li>Dashboard engineering</li><li>Query optimisation</li>
         </ul>
       </section>
       <section class="kit reveal">
         <h3>Languages &amp; platforms</h3>
         <ul class="chips chips--lg">
-          <li>Python</li><li>pandas</li><li>NumPy</li><li>R</li><li>Jupyter</li>
-          <li>Git</li><li>Linux</li><li>REST APIs</li><li>Azure</li><li>AWS</li><li>Terraform</li><li>Ansible</li>
+          <li>Python</li><li>pandas</li><li>NumPy</li><li>R</li><li>Jupyter</li><li>FastAPI</li>
+          <li>React</li><li>Docker</li><li>Git</li><li>CI/CD</li><li>Linux</li><li>REST APIs</li>
+          <li>AWS (ECS Fargate)</li><li>Azure</li><li>Terraform</li><li>Ansible</li>
         </ul>
       </section>
       <section class="kit reveal">
@@ -746,7 +946,7 @@
             <p>E-Connect Computer Education (CBITVT) · A+ · 152/200</p>
           </li>
           <li>
-            <div class="creds__row"><strong>Higher Secondary, Science</strong><span>2017 — 2019</span></div>
+            <div class="creds__row"><strong>Higher Secondary, Science</strong><span>2018 — 2019</span></div>
             <p>Nirmala Memorial Foundation College, Mumbai</p>
           </li>
         </ul>

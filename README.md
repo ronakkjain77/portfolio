@@ -111,9 +111,15 @@ shortening them.
 
 ## Content sources
 
-Career history, dates and role detail come from Ronak's LinkedIn
-(<https://www.linkedin.com/in/ronak-lodha>) and his résumé, which is served at
-`assets/resume.pdf`.
+Career history, dates and role detail come from Ronak's résumé — served at
+`assets/resume.pdf` and the source of truth — supplemented by his LinkedIn
+(<https://www.linkedin.com/in/ronak-lodha>) where the résumé is abbreviated for
+space (the Vitara Enterprises internship and the BCG GenAI certificate are on
+both LinkedIn and this site, but not on the one-page résumé).
+
+Clients are named on this site only where the name is already public or
+explicitly cleared: Google appears because it is on Ronak's public LinkedIn
+profile. Every other client is described by category.
 
 Quantitative claims on the site are limited to figures Ronak can stand behind.
 Where a chart illustrates a method rather than real client numbers it is labelled
