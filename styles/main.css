@@ -273,29 +273,26 @@ button { font: inherit; color: inherit; }
   filter: saturate(.82) contrast(1.04);
 }
 
-/* stats */
-.stats {
+/* credibility rail — career-span context under the hero */
+.hcred {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 1px;
-  margin-top: clamp(56px, 8vw, 92px);
-  background: var(--line-soft);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--r-md);
-  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 26px clamp(34px, 5vw, 72px);
+  max-width: 880px;
+  margin-top: clamp(54px, 7vw, 88px);
+  padding-top: clamp(28px, 3vw, 36px);
+  border-top: 1px solid var(--line);
 }
-.stat { background: var(--bg); padding: 22px 22px 24px; }
-.stat dt {
+.hcred__g { display: flex; flex-direction: column; gap: 10px; }
+.hcred dt {
   font: 500 11px/1 var(--ff-mono); letter-spacing: .12em;
   text-transform: uppercase; color: var(--tx-faint);
 }
-.stat dd {
-  margin: 14px 0 8px;
-  font-family: var(--ff-serif); font-size: clamp(38px, 4.4vw, 52px);
-  line-height: .95; letter-spacing: -.02em; color: var(--accent);
-  font-variant-numeric: tabular-nums;
+.hcred dd {
+  margin: 0; font-size: 15.5px; line-height: 1.5;
+  letter-spacing: -.006em; color: var(--tx);
 }
-.stat p { font-size: 13.5px; line-height: 1.5; color: var(--tx-dim); }
+.hcred dd i { font-style: normal; font-size: 13px; color: var(--tx-faint); }
 
 /* ── Bands & section headers ──────────────────────────────── */
 .band { padding: clamp(68px, 10vw, 124px) 0; border-top: 1px solid var(--line-soft); }
@@ -708,7 +705,6 @@ button { font: inherit; color: inherit; }
   .rec__chev { margin-top: 5px; }
   .rec__tag { grid-column: 2; justify-self: start; margin-top: 2px; }
   .rec__chev { grid-column: 3; grid-row: 1; }
-  .stat { padding: 18px; }
 }
 
 @media (max-width: 480px) {

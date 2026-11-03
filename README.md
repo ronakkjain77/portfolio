@@ -81,7 +81,7 @@ separation problem to solve and the accent reads better against the surface.
 
 ### Type
 
-- **Instrument Serif** — display headings, stat figures
+- **Instrument Serif** — display headings and figures
 - **Instrument Sans** — body and UI
 - **JetBrains Mono** — dates, labels, metadata, chart text
 
