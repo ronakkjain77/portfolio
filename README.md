@@ -1,4 +1,4 @@
-# ronakkjain77.github.io/portfolio
+# ronaklodha.in
 
 Personal site for **Ronak Lodha** — Senior Data Analyst at Iksula, Mumbai.
 
@@ -35,6 +35,12 @@ system also works, though relative paths behave better over HTTP.
 
 GitHub Pages serves `main` from the repository root. Push to `main` and the live
 site updates — no build, no action, no artifact step.
+
+The site is served from the apex domain **ronaklodha.in**, set by the `CNAME`
+file at the repository root. Deleting or renaming that file reverts Pages to
+`ronakkjain77.github.io/portfolio`, so leave it in place. DNS lives at GoDaddy:
+four `A` records on the apex pointing at GitHub's Pages addresses, plus a `www`
+`CNAME` to `ronakkjain77.github.io` so both spellings resolve.
 
 ## Design system
 
